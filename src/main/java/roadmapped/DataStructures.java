@@ -1,4 +1,5 @@
 package roadmapped;
+
 import java.util.*;
 
 public class DataStructures {
@@ -21,16 +22,16 @@ public class DataStructures {
     public HashMap<String, ArrayList<Integer>> multimap = new HashMap<>();
 
 
-
-    public <T> void runTroughList(List<T> list){
+    public <T> void runTroughList(List<T> list) {
         //iterator
         for (T t : list) {
             System.out.println(t);
         }
     }
-    public void fillWithRand(int[] array){
+
+    public void fillWithRand(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random()*10);
+            array[i] = (int) (Math.random() * 10);
         }
     }
 }
