@@ -23,10 +23,20 @@ public class DataStructures {
 
 
     public <T> void runTroughList(List<T> list) {
-        //iterator
+        //foreach
         for (T t : list) {
             System.out.println(t);
         }
+    }
+
+    public <T> void runThroughListWithIterator(List<T> list) {
+        //iterator
+        Iterator<T> it = list.iterator();
+        for (; it.hasNext(); ) {
+            T obj = it.next();
+            System.out.println(obj);
+        }
+
     }
 
     public void fillWithRand(int[] array) {
